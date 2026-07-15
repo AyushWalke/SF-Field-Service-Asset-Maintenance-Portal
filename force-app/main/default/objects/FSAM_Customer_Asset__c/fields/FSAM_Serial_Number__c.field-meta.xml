@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSAM_Serial_Number__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Manufacturer-issued unique serial number.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the manufacturer&apos;s serial number exactly as printed on the asset.</inlineHelpText>
+    <label>Serial Number</label>
+    <length>50</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>
