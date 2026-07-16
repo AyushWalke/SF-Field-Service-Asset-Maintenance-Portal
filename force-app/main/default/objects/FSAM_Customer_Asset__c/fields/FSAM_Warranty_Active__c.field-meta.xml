@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSAM_Warranty_Active__c</fullName>
+    <description>Automatically indicates whether the asset is currently under warranty.</description>
+    <formula>AND(
+    TODAY() &gt;= FSAM_Warranty_Start_Date__c,
+    TODAY() &lt;= FSAM_Warranty_End_Date__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Automatically indicates whether the asset is currently under warranty.</inlineHelpText>
+    <label>Warranty Active</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

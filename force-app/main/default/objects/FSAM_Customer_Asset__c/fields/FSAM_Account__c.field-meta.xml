@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSAM_Account__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Customer who owns the asset.</description>
+    <inlineHelpText>Select the customer account that owns this asset.</inlineHelpText>
+    <label>Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>FSAM Customer Assets</relationshipLabel>
+    <relationshipName>FSAM_Customer_Assets</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

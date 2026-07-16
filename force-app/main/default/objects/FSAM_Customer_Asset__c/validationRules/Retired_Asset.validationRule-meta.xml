@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retired_Asset</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   ISPICKVAL( FSAM_Status__c , &quot;Retired&quot;),
+    FSAM_Warranty_End_Date__c &gt; TODAY()
+)</errorConditionFormula>
+    <errorMessage>If Status = Retired, the warranty period must have ended</errorMessage>
+</ValidationRule>
