@@ -6,6 +6,11 @@
         <field>FSAM_Customer_Asset__c.FSAM_Model_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSAM_Customer_Asset__c.FSAM_Service_Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>FSAM_Customer_Asset__c-Customer Asset Layout</layout>
     </layoutAssignments>
