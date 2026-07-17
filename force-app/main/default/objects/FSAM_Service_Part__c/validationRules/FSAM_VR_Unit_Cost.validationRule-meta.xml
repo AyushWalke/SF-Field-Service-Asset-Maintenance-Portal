@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSAM_VR_Unit_Cost</fullName>
+    <active>true</active>
+    <errorConditionFormula>FSAM_Unit_Cost__c &lt; 0</errorConditionFormula>
+    <errorDisplayField>FSAM_Unit_Cost__c</errorDisplayField>
+    <errorMessage>Unit cost cannot be negative.</errorMessage>
+</ValidationRule>
