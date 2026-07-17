@@ -3,5 +3,6 @@
     <fullName>FSAM_VR_Minimum_Stock</fullName>
     <active>true</active>
     <errorConditionFormula>FSAM_Minimum_Stock_Level__c &lt; 0</errorConditionFormula>
+    <errorDisplayField>FSAM_Minimum_Stock_Level__c</errorDisplayField>
     <errorMessage>Minimum stock cannot be negative.</errorMessage>
 </ValidationRule>

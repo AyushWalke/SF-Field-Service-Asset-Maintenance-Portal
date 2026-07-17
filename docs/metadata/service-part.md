@@ -30,6 +30,7 @@ None
 | Minimum Stock Level | FSAM_Minimum_Stock_Level__c | Number | Yes |
 | Active | FSAM_Active__c | Checkbox | Yes |
 | External Part ID | FSAM_External_Part_ID__c | External ID | No |
+Reorder Required | FSAM_Reorder_Required__c | Formula (Checkbox) | System
 
 ---
 

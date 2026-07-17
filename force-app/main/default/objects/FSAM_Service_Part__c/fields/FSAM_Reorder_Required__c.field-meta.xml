@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>FSAM_Reorder_Required__c</fullName>
+    <description>Indicates whether available inventory has reached or fallen below the minimum stock level.</description>
     <formula>FSAM_Available_Quantity__c &lt;= FSAM_Minimum_Stock_Level__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Reorder Required</label>
