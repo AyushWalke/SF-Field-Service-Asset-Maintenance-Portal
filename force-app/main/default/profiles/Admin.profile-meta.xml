@@ -67,6 +67,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>FSAM_Service_Part__c.FSAM_Reorder_Required__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>FSAM_Service_Request__c.FSAM_Closed_Date__c</field>
         <readable>true</readable>

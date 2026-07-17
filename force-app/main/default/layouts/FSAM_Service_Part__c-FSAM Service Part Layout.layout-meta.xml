@@ -38,6 +38,10 @@
                 <behavior>Edit</behavior>
                 <field>FSAM_External_Part_ID__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>FSAM_Reorder_Required__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
