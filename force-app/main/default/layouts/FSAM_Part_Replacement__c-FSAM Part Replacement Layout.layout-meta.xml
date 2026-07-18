@@ -12,47 +12,31 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>FSAM_Customer_Asset__c</field>
+                <field>FSAM_Service_Request__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>FSAM_Subject__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>FSAM_Description__c</field>
+                <field>FSAM_Service_Part__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>FSAM_Priority__c</field>
+                <field>FSAM_Quantity__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>FSAM_Status__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>FSAM_Open_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>FSAM_Closed_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>FSAM_SLA_Due_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>FSAM_Resolution__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>FSAM_External_Request_ID__c</field>
+                <field>FSAM_Unit_Cost__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>FSAM_Total_Parts_Cost__c</field>
+                <field>FSAM_Total_Cost__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>FSAM_Replacement_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>FSAM_Notes__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
@@ -86,29 +70,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>TASK.STATUS</fields>
-        <fields>TASK.PRIORITY</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <relatedList>RelatedActivityList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>TASK.LAST_UPDATE</fields>
-        <relatedList>RelatedHistoryList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>FSAM_Part_Replacement__c.FSAM_Service_Request__c</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

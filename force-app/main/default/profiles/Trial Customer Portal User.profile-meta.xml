@@ -53,6 +53,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>FSAM_Part_Replacement__c.FSAM_Notes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>FSAM_Part_Replacement__c.FSAM_Total_Cost__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>FSAM_Service_Part__c.FSAM_Active__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -64,6 +74,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>FSAM_Service_Part__c.FSAM_Manufacturer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>FSAM_Service_Part__c.FSAM_Reorder_Required__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -91,8 +106,16 @@
         <field>FSAM_Service_Request__c.FSAM_SLA_Due_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>FSAM_Service_Request__c.FSAM_Total_Parts_Cost__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>FSAM_Customer_Asset__c-Customer Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSAM_Part_Replacement__c-FSAM Part Replacement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>FSAM_Service_Part__c-FSAM Service Part Layout</layout>
