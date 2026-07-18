@@ -2,34 +2,55 @@
 
 ## Project Overview
 
-**Goal**
+### Goal
 
 Build an enterprise-style Salesforce application that manages customer-owned assets, service requests, maintenance visits, engineer assignments, spare parts, and maintenance history.
 
-The project follows an Agile sprint model and demonstrates architecture, configuration, Apex, Lightning Web Components, integrations, testing, and deployment using Salesforce DX.
+The project follows an Agile sprint model and demonstrates enterprise architecture, Salesforce configuration, security, automation, Apex, Lightning Web Components, integrations, testing, deployment, and documentation using Salesforce DX.
+
+The project is intentionally scoped as a **portfolio-quality Salesforce Developer project** that can be completed in approximately **26 hours** while still demonstrating enterprise design principles.
+
+---
+
+# Project Status
+
+| Sprint | Duration | Status |
+|---------|---------:|--------|
+| Sprint 0 – Environment Setup | 1 Hour | ✅ Completed |
+| Sprint 1 – Solution Architecture | 2 Hours | ✅ Completed |
+| Sprint 2 – Data Model | 3 Hours | ✅ Completed |
+| Sprint 3 – Platform Configuration & Security | 2 Hours | ⏳ Next |
+| Sprint 4 – Enterprise Apex | 5 Hours | Pending |
+| Sprint 5 – Business Logic (Flows & Triggers) | 3 Hours | Pending |
+| Sprint 6 – Lightning Web Components | 5 Hours | Pending |
+| Sprint 7 – Integrations | 2 Hours | Pending |
+| Sprint 8 – Testing | 2 Hours | Pending |
+| Sprint 9 – Deployment & Documentation | 1 Hour | Pending |
+
+**Estimated Total Project Duration:** **26 Hours**
 
 ---
 
 # Technology Stack
 
-* Salesforce DX
-* Scratch Org
-* Git & GitHub
-* VS Code
-* Salesforce CLI
-* Lightning Web Components
-* Apex
-* SOQL / SOSL
-* Triggers
-* Record-Triggered Flows
-* REST API
-* Named Credentials
-* Custom Metadata
-* Permission Sets
-* Reports & Dashboards
-* Dynamic Forms
-* Dynamic Actions
-* Apex Test Classes
+- Salesforce DX
+- Scratch Org
+- Git & GitHub
+- VS Code
+- Salesforce CLI
+- Apex
+- SOQL / SOSL
+- Trigger Framework
+- Record-Triggered Flows
+- Lightning Web Components
+- REST API
+- Named Credentials
+- Permission Sets
+- Reports & Dashboards
+- Dynamic Forms
+- Dynamic Actions
+- Custom Metadata
+- Apex Test Classes
 
 ---
 
@@ -37,264 +58,232 @@ The project follows an Agile sprint model and demonstrates architecture, configu
 
 ```
 LWC
-   │
+ │
 Apex Controller
-   │
+ │
 Service Layer
-   │
+ │
 Selector Layer
-   │
+ │
 Database
 ```
 
-Simple automation is implemented with Flows, while reusable business logic lives in Apex Services.
+---
+
+# Development Principles
+
+- Configuration before Code
+- Flow before Apex whenever appropriate
+- Apex only for reusable or complex business logic
+- One Trigger Per Object
+- Bulk-safe design
+- Enterprise naming conventions
+- Security-first development
+- Documentation-first approach
 
 ---
 
 # Sprint Plan
 
----
-
-## Sprint 0 — Environment Setup
+## Sprint 0 — Environment Setup (1 Hour)
 
 ### Goal
 
-Prepare a professional Salesforce DX development environment.
+Prepare the Salesforce DX development environment.
 
 ### Deliverables
 
-* Salesforce CLI
-* Dev Hub
-* Scratch Org
-* Salesforce DX Project
-* Git Repository
-* GitHub Repository
-* VS Code Configuration
-* Initial Commit
+- Salesforce CLI
+- Dev Hub
+- Scratch Org
+- Git Repository
+- GitHub Repository
+- VS Code
+- Initial Commit
 
-### Status
-
-✅ Completed
+**Status:** ✅ Completed
 
 ---
 
-## Sprint 1 — Solution Architecture
-
-### Goal
-
-Design the application before building it.
+## Sprint 1 — Solution Architecture (2 Hours)
 
 ### Deliverables
 
-* Business Requirements
-* Functional Requirements
-* Non-Functional Requirements
-* Actors
-* User Stories
-* Use Case Diagram
-* High-Level Architecture
-* Security Architecture
-* Data Model
-* Object Ownership Strategy
-* Naming Conventions
+- Business Requirements
+- Functional Requirements
+- Non-functional Requirements
+- Actors
+- User Stories
+- Architecture
+- Security Architecture
+- Data Model
+- Naming Conventions
+- ADR Documents
+
+**Status:** ✅ Completed
 
 ---
 
-## Sprint 2 — Data Model
-
-### Goal
-
-Build the Salesforce data model.
+## Sprint 2 — Data Model (3 Hours)
 
 ### Deliverables
 
-* Custom Objects
-* Fields
-* Relationships
-* Validation Rules
-* Formula Fields
-* Roll-Up Summary Fields
-* External IDs
-* Sample Data
+Objects
 
-Objects include:
+- FSAM Customer Asset
+- FSAM Service Request
+- FSAM Service Part
+- FSAM Part Replacement
+- FSAM Maintenance Visit
+- FSAM Engineer Assignment
 
-* Customer Asset
-* Service Request
-* Maintenance Visit
-* Service Part
-* Part Replacement
-* Engineer Assignment
+Metadata
+
+- Fields
+- Relationships
+- Validation Rules
+- Formula Fields
+- Roll-up Summary Fields
+- External IDs
+
+Documentation
+
+- Metadata Documentation
+- ADR Updates
+
+**Status:** ✅ Completed
 
 ---
 
-## Sprint 3 — Platform Configuration
-
-### Goal
-
-Configure the Salesforce application.
+## Sprint 3 — Platform Configuration & Security (2 Hours)
 
 ### Deliverables
 
-* Lightning App
-* Tabs
-* Record Pages
-* Dynamic Forms
-* Dynamic Actions
-* Permission Sets
-* Reports
-* Dashboards
+- Lightning App
+- Tabs
+- Navigation
+- Record Pages
+- Dynamic Forms
+- Dynamic Actions
+- Permission Sets
+- OWD
+- Sharing Rules
+- Reports
+- Dashboard
+- List Views
 
 ---
 
-## Sprint 4 — Enterprise Apex
-
-### Goal
-
-Implement reusable business logic.
+## Sprint 4 — Enterprise Apex (5 Hours)
 
 ### Deliverables
 
-* Selector Layer
-* Service Layer
-* Controller Layer
-* DTO Classes
-* Utility Classes
-* Custom Exceptions
-* CRUD/FLS Enforcement
-* Sharing
-* Test Data Factory
+- Trigger Framework
+- Selector Layer
+- Service Layer
+- Controller Layer
+- Utility Classes
+- Constants
+- Custom Exceptions
+- Test Data Factory
+- CRUD/FLS
+- Business Services
 
 ---
 
-## Sprint 5 — Business Logic
-
-### Goal
-
-Automate business processes.
+## Sprint 5 — Business Logic (3 Hours)
 
 ### Deliverables
 
-* Trigger Framework
-* Trigger Handlers
-* Record-Triggered Flows
-* Assignment Logic
-* Status Management
-* SLA Validation
-* Notifications
+- Record-Triggered Flows
+- Status Automation
+- Inventory Updates
+- Assignment Logic
+- SLA Validation
+- Notifications
 
 ---
 
-## Sprint 6 — Lightning Web Components
-
-### Goal
-
-Develop the user interface.
+## Sprint 6 — Lightning Web Components (5 Hours)
 
 ### Deliverables
 
-* Asset List
-* Asset Details
-* Service Request Form
-* Engineer Dashboard
-* Maintenance History
-* Search
-* Filtering
-* Pagination
-* Toast Messages
-* Loading Spinner
-* Responsive Design
-* Navigation
+- Asset Explorer
+- Service Request Dashboard
+- Engineer Dashboard
+- Maintenance Timeline
+- Parts Usage
+- Search
+- Pagination
+- Filtering
+- Navigation
+- Toasts
+- Spinner
 
 ---
 
-## Sprint 7 — Integrations
-
-### Goal
-
-Integrate with an external maintenance system.
+## Sprint 7 — Integrations (2 Hours)
 
 ### Deliverables
 
-* REST Callouts
-* Named Credential
-* Mock External API
-* Error Handling
-* Logging Strategy
+- Named Credential
+- REST Callout
+- Mock API
+- JSON Parsing
+- Error Handling
+- HttpCalloutMock
 
 ---
 
-## Sprint 8 — Testing
-
-### Goal
-
-Ensure production-ready quality.
+## Sprint 8 — Testing (2 Hours)
 
 ### Deliverables
 
-* Apex Unit Tests
-* Trigger Tests
-* Service Tests
-* LWC Tests (optional)
-* Callout Mock Tests
-* Negative Test Cases
-* 90%+ Code Coverage
+- Apex Tests
+- Trigger Tests
+- Service Tests
+- Flow Tests
+- Integration Tests
+- 90%+ Code Coverage
 
 ---
 
-## Sprint 9 — Deployment & Documentation
-
-### Goal
-
-Prepare the project for release.
+## Sprint 9 — Deployment & Documentation (1 Hour)
 
 ### Deliverables
 
-* Git Branching Strategy
-* Deployment Validation
-* Release Notes
-* README
-* Architecture Documentation
-* Future Enhancements
+- README
+- Deployment Guide
+- Release Notes
+- Architecture Updates
+- Demo Guide
+- Portfolio Screenshots
 
 ---
 
 # Definition of Done
 
-A sprint is considered complete only when:
+A sprint is complete only when:
 
-* Development is finished.
-* Metadata is committed to Git.
-* Apex tests pass.
-* Code review is completed.
-* Documentation is updated.
-* Interview discussion points are understood.
-
----
-
-# Mentoring Workflow
-
-Each sprint follows the same process:
-
-1. Learn the theory.
-2. Understand the architectural decision.
-3. Create the required metadata.
-4. Implement the solution.
-5. Review the implementation.
-6. Discuss interview questions.
-7. Merge the sprint into the main branch.
-
-No sprint begins until the previous sprint has passed review.
+- Development is complete.
+- Metadata is committed.
+- Documentation is updated.
+- Code review is approved.
+- Tests pass.
+- Interview discussion points are understood.
 
 ---
 
 # Expected Outcome
 
-By the end of the project you will have:
+By the end of this project you will have:
 
-* A realistic enterprise Salesforce application
-* Strong Apex and LWC experience
-* Experience with Salesforce DX and Git
-* Integration experience using REST APIs
-* Enterprise project documentation
-* A portfolio project suitable for Salesforce Developer interviews
+- Enterprise Salesforce architecture experience
+- Salesforce DX workflow
+- Enterprise Apex architecture
+- Lightning Web Components
+- Record-Triggered Flow development
+- REST Integration
+- Testing experience
+- Professional documentation
+- Portfolio-ready Salesforce project
