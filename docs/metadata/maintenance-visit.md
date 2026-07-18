@@ -149,6 +149,28 @@ Actual Start, Actual End, and Work Performed are required when completing a main
 
 Top of Page
 
+## FSAM_VR_Engineer_Required
+
+### Purpose
+
+Assigning Engineer is required
+
+### Formula
+
+```text
+ISBLANK(FSAM_Engineer__c)
+```
+
+### Error Message
+
+```
+Please assign an engineer before saving the maintenance visit.
+```
+
+### Error Location
+
+FSAM_Engineer__c
+
 ---
 
 # Business Rules
