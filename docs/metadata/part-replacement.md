@@ -55,7 +55,7 @@ None currently.
 | Service Request    | FSAM_Service_Request__c  | Master-Detail        | Yes      | Identifies the related service request.              |
 | Service Part       | FSAM_Service_Part__c     | Lookup               | Yes      | Identifies the spare part consumed or replaced.      |
 | Quantity           | FSAM_Quantity__c         | Number(10,0)         | Yes      | Number of units consumed.                            |
-| Unit Cost          | FSAM_Unit_Cost__c        | Currency(18,2)       | Yes      | Stores the unit cost at the time of replacement.     |
+| Unit Cost          | FSAM_Unit_Cost__c        | Currency(16,2)       | Yes      | Stores the unit cost at the time of replacement.     |
 | Total Cost         | FSAM_Total_Cost__c       | Formula (Currency)   | System   | Calculates the total replacement cost.               |
 | Replacement Date   | FSAM_Replacement_Date__c | Date/Time            | Yes      | Records when the replacement occurred.               |
 | Notes              | FSAM_Notes__c            | Long Text Area(2000) | No       | Stores additional information about the replacement. |
