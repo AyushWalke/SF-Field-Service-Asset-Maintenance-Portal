@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSAM_VR_Accepted_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(FSAM_Accepted_Date__c)),
+    FSAM_Accepted_Date__c &lt; FSAM_Assigned_Date__c
+)</errorConditionFormula>
+    <errorDisplayField>FSAM_Accepted_Date__c</errorDisplayField>
+    <errorMessage>Accepted Date cannot be earlier than Assigned Date.</errorMessage>
+</ValidationRule>

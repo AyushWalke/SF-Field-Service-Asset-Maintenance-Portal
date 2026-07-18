@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSAM_VR_Status_Completed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(FSAM_Assignment_Status__c, &quot;Completed&quot;),
+    ISBLANK(FSAM_Completed_Date__c)
+)</errorConditionFormula>
+    <errorMessage>Completed Date is required when the assignment is marked Completed.</errorMessage>
+</ValidationRule>
