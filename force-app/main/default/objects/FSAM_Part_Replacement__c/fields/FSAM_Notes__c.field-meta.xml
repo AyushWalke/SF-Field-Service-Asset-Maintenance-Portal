@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSAM_Notes__c</fullName>
+    <description>Additional information about the part replacement.</description>
+    <inlineHelpText>Enter any relevant details about why or how the part was replaced.</inlineHelpText>
+    <label>Notes</label>
+    <length>2000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

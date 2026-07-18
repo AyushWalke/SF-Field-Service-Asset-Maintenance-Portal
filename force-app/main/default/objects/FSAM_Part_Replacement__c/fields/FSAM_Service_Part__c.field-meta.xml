@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSAM_Service_Part__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Service part used during the repair or maintenance activity.</description>
+    <inlineHelpText>Select the spare part that was used for this service request.</inlineHelpText>
+    <label>Service Part</label>
+    <referenceTo>FSAM_Service_Part__c</referenceTo>
+    <relationshipLabel>FSAM Part Replacements</relationshipLabel>
+    <relationshipName>FSAM_Part_Replacements</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
