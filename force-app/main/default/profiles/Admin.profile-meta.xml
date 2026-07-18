@@ -53,6 +53,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>FSAM_Engineer_Assignment__c.FSAM_Accepted_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSAM_Engineer_Assignment__c.FSAM_Assignment_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSAM_Engineer_Assignment__c.FSAM_Completed_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSAM_Engineer_Assignment__c.FSAM_Engineer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>FSAM_Maintenance_Visit__c.FSAM_Actual_End__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -150,6 +170,9 @@
         <layout>FSAM_Customer_Asset__c-Customer Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>FSAM_Engineer_Assignment__c-FSAM Engineer Assignment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>FSAM_Maintenance_Visit__c-FSAM Maintenance Visit Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -168,6 +191,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>FSAM_Customer_Asset__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>FSAM_Engineer_Assignment__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

@@ -53,6 +53,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>FSAM_Engineer_Assignment__c.FSAM_Accepted_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>FSAM_Engineer_Assignment__c.FSAM_Assignment_Notes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>FSAM_Engineer_Assignment__c.FSAM_Completed_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>FSAM_Engineer_Assignment__c.FSAM_Engineer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>FSAM_Maintenance_Visit__c.FSAM_Actual_End__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -148,6 +168,9 @@
     </fieldPermissions>
     <layoutAssignments>
         <layout>FSAM_Customer_Asset__c-Customer Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSAM_Engineer_Assignment__c-FSAM Engineer Assignment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>FSAM_Maintenance_Visit__c-FSAM Maintenance Visit Layout</layout>
