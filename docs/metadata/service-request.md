@@ -85,10 +85,10 @@ Each request tracks the complete lifecycle from creation to closure.
 
 ---
 
-# Rollup Summary Fields *(Pending)*
+# Rollup Summary Fields
 
 - Total Maintenance Visits - Implemented
-- Total Parts Cost
+- Total Parts Cost - Implemented
 
 ---
 
