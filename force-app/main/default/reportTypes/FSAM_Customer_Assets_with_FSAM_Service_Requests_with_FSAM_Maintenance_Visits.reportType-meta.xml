@@ -3,16 +3,16 @@
     <baseObject>FSAM_Customer_Asset__c</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>FSAM Customer Assets with FSAM Service Requests with FSAM Part Replacements</description>
+    <description>FSAM Customer Assets with FSAM Service Requests with FSAM Maintenance Visits</description>
     <join>
         <join>
             <outerJoin>false</outerJoin>
-            <relationship>FSAM_Part_Replacements__r</relationship>
+            <relationship>FSAM_Maintenance_Visits__r</relationship>
         </join>
         <outerJoin>false</outerJoin>
         <relationship>FSAM_Service_Requests__r</relationship>
     </join>
-    <label>FSAM Customer Assets with FSAM Service Requests with FSAM Part Replacements</label>
+    <label>FSAM Customer Assets with FSAM Service Requests with FSAM Maintenance Visits</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -243,68 +243,83 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Id</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedDate</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedBy</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedBy</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>FSAM_Service_Request__c</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>FSAM_Service_Part__c</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <field>FSAM_Engineer__c</field>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>FSAM_Quantity__c</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <field>FSAM_Visit_Type__c</field>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>FSAM_Unit_Cost__c</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <field>FSAM_Visit_Status__c</field>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>FSAM_Total_Cost__c</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <field>FSAM_Scheduled_Start__c</field>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>FSAM_Replacement_Date__c</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <field>FSAM_Scheduled_End__c</field>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>FSAM_Notes__c</field>
-            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Part_Replacements__r</table>
+            <field>FSAM_Actual_Start__c</field>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
         </columns>
-        <masterLabel>FSAM Part Replacements</masterLabel>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FSAM_Actual_End__c</field>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FSAM_Work_Performed__c</field>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FSAM_Engineer_Notes__c</field>
+            <table>FSAM_Customer_Asset__c.FSAM_Service_Requests__r.FSAM_Maintenance_Visits__r</table>
+        </columns>
+        <masterLabel>FSAM Maintenance Visits</masterLabel>
     </sections>
 </ReportType>

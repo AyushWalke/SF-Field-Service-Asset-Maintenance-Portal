@@ -53,6 +53,36 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>FSAM_Maintenance_Visit__c.FSAM_Actual_End__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSAM_Maintenance_Visit__c.FSAM_Actual_Start__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSAM_Maintenance_Visit__c.FSAM_Engineer_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSAM_Maintenance_Visit__c.FSAM_Engineer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSAM_Maintenance_Visit__c.FSAM_Scheduled_End__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSAM_Maintenance_Visit__c.FSAM_Work_Performed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>FSAM_Part_Replacement__c.FSAM_Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -108,11 +138,19 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>FSAM_Service_Request__c.FSAM_Total_Maintenance_Visits__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>FSAM_Service_Request__c.FSAM_Total_Parts_Cost__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
         <layout>FSAM_Customer_Asset__c-Customer Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSAM_Maintenance_Visit__c-FSAM Maintenance Visit Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>FSAM_Part_Replacement__c-FSAM Part Replacement Layout</layout>
@@ -130,6 +168,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>FSAM_Customer_Asset__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>FSAM_Maintenance_Visit__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
