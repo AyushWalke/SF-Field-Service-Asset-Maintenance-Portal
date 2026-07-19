@@ -24,5 +24,4 @@
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>FSAM_Portal_UtilityBar</utilityBar>
 </CustomApplication>
