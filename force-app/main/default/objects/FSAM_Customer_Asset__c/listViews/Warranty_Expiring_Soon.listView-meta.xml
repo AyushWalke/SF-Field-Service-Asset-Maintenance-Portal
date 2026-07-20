@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warranty_Expiring_Soon</fullName>
+    <columns>FSAM_Asset_Name__c</columns>
+    <columns>FSAM_Account__c</columns>
+    <columns>FSAM_Warranty_End_Date__c</columns>
+    <columns>FSAM_Warranty_Active__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>FSAM_Warranty_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Warranty Expiring Soon</label>
+</ListView>

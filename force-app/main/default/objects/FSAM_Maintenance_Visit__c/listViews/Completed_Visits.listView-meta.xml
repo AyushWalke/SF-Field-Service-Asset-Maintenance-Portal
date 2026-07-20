@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completed_Visits</fullName>
+    <columns>NAME</columns>
+    <columns>FSAM_Engineer__c</columns>
+    <columns>FSAM_Actual_End__c</columns>
+    <columns>FSAM_Work_Performed__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSAM_Visit_Status__c</field>
+        <operation>equals</operation>
+        <value>Completed</value>
+    </filters>
+    <label>Completed Visits</label>
+</ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upcoming_Visits</fullName>
+    <columns>NAME</columns>
+    <columns>FSAM_Engineer__c</columns>
+    <columns>FSAM_Scheduled_Start__c</columns>
+    <columns>FSAM_Visit_Type__c</columns>
+    <columns>FSAM_Service_Request__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FSAM_Visit_Status__c</field>
+        <operation>equals</operation>
+        <value>Scheduled</value>
+    </filters>
+    <label>Upcoming Visits</label>
+</ListView>

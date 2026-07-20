@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Low_Stock_Parts</fullName>
+    <columns>FSAM_Part_Name__c</columns>
+    <columns>FSAM_Available_Quantity__c</columns>
+    <columns>FSAM_Minimum_Stock_Level__c</columns>
+    <columns>FSAM_Unit_Cost__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>FSAM_Reorder_Required__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Low Stock Parts</label>
+</ListView>
