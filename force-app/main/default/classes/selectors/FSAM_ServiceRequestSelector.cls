@@ -13,7 +13,7 @@ public with sharing class FSAM_ServiceRequestSelector {
     }
 
     // return service request by status
-    public static List<FSAM_Service_Request__c> getByStatus(string status){
+    public static List<FSAM_Service_Request__c> getByStatus(String status){
         if(status == null){
             return new List<FSAM_Service_Request__c>();
         }
