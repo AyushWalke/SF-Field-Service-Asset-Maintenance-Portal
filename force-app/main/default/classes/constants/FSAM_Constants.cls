@@ -33,4 +33,10 @@ public with sharing class FSAM_Constants {
     public static final String ASSIGNMENT_STATUS_COMPLETED = 'Completed';
     public static final String ASSIGNMENT_STATUS_REASSIGNED = 'Reassigned';
 
+    // Customer Asset Status
+
+    public static final String ASSET_STATUS_ACTIVE = 'Active';
+    public static final String ASSET_STATUS_UNDER_MAINTENANCE = 'Under Maintenance';
+    public static final String ASSET_STATUS_INACTIVE = 'Inactive';
+    public static final String ASSET_STATUS_RETIRED = 'Retired';
 }
