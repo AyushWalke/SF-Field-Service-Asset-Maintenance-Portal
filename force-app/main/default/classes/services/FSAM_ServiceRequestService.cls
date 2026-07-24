@@ -44,7 +44,7 @@ public with sharing class FSAM_ServiceRequestService {
         FSAM_Logger.info('Updated status for ' + requests.size() + ' Service Request(s).');
     }
 
-    public static List<FSAM_Service_Request__c> getOpenRequest(){
+    public static List<FSAM_Service_Request__c> getOpenRequests(){
         return FSAM_ServiceRequestSelector.getOpenRequests();
     }
 }

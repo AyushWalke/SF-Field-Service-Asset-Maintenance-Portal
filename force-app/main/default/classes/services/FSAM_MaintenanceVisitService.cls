@@ -7,6 +7,10 @@ public with sharing class FSAM_MaintenanceVisitService {
 
         FSAM_Maintenance_Visit__c visit = FSAM_MaintenanceVisitSelector.getById(visitId);
 
+        if (visit == null) {
+            throw new FSAM_BusinessException('Maintenance Visit not found.');
+        }
+
         visit.FSAM_Visit_Status__c = FSAM_Constants.VISIT_STATUS_COMPLETED;
 
         update visit;
