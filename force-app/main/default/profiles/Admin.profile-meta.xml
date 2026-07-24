@@ -34,6 +34,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_MaintenanceVisitTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_SecurityUtil</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -51,6 +55,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_ServiceRequestService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ServiceRequestTriggerHandler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
