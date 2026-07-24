@@ -10,11 +10,16 @@ public with sharing class FSAM_ServiceRequestService {
             throw new FSAM_BusinessException('No matching service request found');
         }
 
+        if (!FSAM_SecurityUtil.canUpdate(FSAM_Service_Request__c.SObjectType)) {
+            throw new FSAM_BusinessException('Current user does not have permission to update Service Requests.');
+        }
+
         for(FSAM_Service_Request__c request: requests){
             request.FSAM_Status__c = FSAM_Constants.SR_STATUS_CLOSED;
         }
 
-        update requests;
+        List<SObject> sanitized = FSAM_SecurityUtil.stripInaccessibleForUpdate(requests);
+        update sanitized;
 
         FSAM_Logger.info('Closed ' + requests.size() + ' Service Request(s).');
     }
@@ -35,11 +40,16 @@ public with sharing class FSAM_ServiceRequestService {
             throw new FSAM_BusinessException('No matching Service Requests found.');
         }
 
+        if (!FSAM_SecurityUtil.canUpdate(FSAM_Service_Request__c.SObjectType)) {
+            throw new FSAM_BusinessException('Current user does not have permission to update Service Requests.');
+        }
+
         for (FSAM_Service_Request__c request : requests) {
             request.FSAM_Status__c = newStatus;
         }
 
-        update requests;
+        List<SObject> sanitized =FSAM_SecurityUtil.stripInaccessibleForUpdate(requests);
+        update sanitized;
 
         FSAM_Logger.info('Updated status for ' + requests.size() + ' Service Request(s).');
     }
