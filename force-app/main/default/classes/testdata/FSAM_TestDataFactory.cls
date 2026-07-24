@@ -16,7 +16,7 @@ public with sharing class FSAM_TestDataFactory {
         return con;
     }
 
-    public static FSAM_Customer_Asset__c createCustomerAsset(Id accountId, Id contactId){
+    public static FSAM_Customer_Asset__c createCustomerAsset(Id accountId){
         FSAM_Customer_Asset__c asset = new FSAM_Customer_Asset__c(
             FSAM_Asset_Name__c = 'Test Asset',
             FSAM_Asset_Type__c = 'Power Systems',
@@ -24,7 +24,7 @@ public with sharing class FSAM_TestDataFactory {
             FSAM_Installation_Date__c = Date.today(),
             FSAM_Warranty_Start_Date__c = Date.today(),
             FSAM_Warranty_End_Date__c = Date.today().addYears(1),
-            FSAM_Status__c = 'Active'
+            FSAM_Status__c = FSAM_Constants.ASSET_STATUS_ACTIVE
         );
         insert asset;
         return asset;
@@ -34,8 +34,8 @@ public with sharing class FSAM_TestDataFactory {
         FSAM_Service_Request__c request = new FSAM_Service_Request__c(
             FSAM_Customer_Asset__c = assetId,
             FSAM_Subject__c = 'Test Subject',
-            FSAM_Status__c = 'New',
-            FSAM_Priority__c = 'High',
+            FSAM_Status__c = FSAM_Constants.SR_STATUS_NEW,
+            FSAM_Priority__c = FSAM_Constants.PRIORITY_HIGH,
             FSAM_Open_Date__c = System.now()
         );
         insert request;
@@ -57,7 +57,7 @@ public with sharing class FSAM_TestDataFactory {
     public static FSAM_Maintenance_Visit__c createMaintenanceVisit(Id requestId){
         FSAM_Maintenance_Visit__c visit = new FSAM_Maintenance_Visit__c(
             FSAM_Service_Request__c = requestId,
-            FSAM_Visit_Status__c = 'Scheduled',
+            FSAM_Visit_Status__c = FSAM_Constants.VISIT_STATUS_SCHEDULED,
             FSAM_Visit_Type__c = 'On-Site',
             FSAM_Scheduled_Start__c = System.now()
         );
