@@ -1,12 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
+        <name>Low_Inventory</name>
+        <label>Low Inventory</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>recipientAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>$User.Email</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>Low Inventory Alert</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>&lt;p&gt;A service part inventory level has reached the reorder threshold.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Part:&lt;/p&gt;&lt;p&gt;{!$Record.FSAM_Service_Part__r.Name}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Current Quantity:&lt;/p&gt;&lt;p&gt;{!$Record.FSAM_Service_Part__r.FSAM_Available_Quantity__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please review inventory requirements.&lt;/p&gt;</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>3.0.1</versionString>
+    </actionCalls>
+    <actionCalls>
         <name>Update_Service_Part_Inventory</name>
         <label>Update Service Part Inventory</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <actionName>FSAM_InventoryInvocable</actionName>
         <actionType>apex</actionType>
+        <connector>
+            <targetReference>Reorder_Required</targetReference>
+        </connector>
         <flowTransactionModel>Automatic</flowTransactionModel>
         <inputParameters>
             <name>quantity</name>
@@ -27,6 +70,28 @@
     </actionCalls>
     <apiVersion>67.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Reorder_Required</name>
+        <label>Reorder Required?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Not Required</defaultConnectorLabel>
+        <rules>
+            <name>Required</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FSAM_Service_Part__r.FSAM_Reorder_Required__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Low_Inventory</targetReference>
+            </connector>
+            <label>Required</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
     <interviewLabel>FSAM - Inventory Update Automation {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FSAM - Inventory Update Automation</label>
