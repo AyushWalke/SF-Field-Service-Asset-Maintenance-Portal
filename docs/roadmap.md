@@ -22,6 +22,7 @@ The project is intentionally scoped as a **portfolio-quality Salesforce Develope
 | Sprint 3 – Platform Configuration & Security | 2 Hours | ✅ Completed |
 | Sprint 4 – Enterprise Apex | 5 Hours | ✅ Completed |
 | Sprint 5 – Business Logic (Flows & Triggers) | 3 Hours | ✅ Completed |
+| Sprint 5.5 – UI/UX Architecture (Planning) | Included in Sprint 6 | ⏳ Next |
 | Sprint 6 – Lightning Web Components | 5 Hours | ⏳ Next |
 | Sprint 7 – Integrations | 2 Hours | Pending |
 | Sprint 8 – Testing | 2 Hours | Pending |
@@ -210,6 +211,19 @@ Documentation
 
 ---
 
+# Sprint 5.5 -- UI/UX Architecture
+
+-   Application navigation
+-   User journey
+-   Screen wireframes
+-   Component hierarchy
+-   Apex controller mapping
+-   Lightning Design System guidelines
+-   Shared component standards
+-   Loading, empty and error state design
+
+---
+
 ## Sprint 6 — Lightning Web Components (5 Hours)
 
 ### Deliverables
@@ -225,6 +239,45 @@ Documentation
 - Navigation
 - Toasts
 - Spinner
+
+## Module 1 -- Dashboard
+
+-   KPI Cards
+-   Recent Service Requests
+-   Quick Actions
+
+## Module 2 -- Asset Explorer
+
+-   Asset Search
+-   Asset Details
+-   Maintenance History
+
+## Module 3 -- Service Request Workspace
+
+-   Request Summary
+-   Maintenance Timeline
+-   Parts Usage
+
+## Module 4 -- Engineer Workspace
+
+-   Assignment Dashboard
+-   Today's Visits
+-   Open Requests
+
+## Module 5 -- Inventory Workspace
+
+-   Parts Search
+-   Inventory Table
+-   Filtering
+
+## Module 6 -- Shared Components
+
+-   Pagination
+-   Navigation
+-   Toast Notifications
+-   Loading Spinner
+-   Empty State
+-   Error State
 
 ---
 
