@@ -33,10 +33,10 @@ const DEFAULT_STATUS = {
 }
 
 export default class FsamStatusBadge extends LightningElement {
-    @api ststus;
+    @api status;
 
     get statusConfig(){
-        return STATUS_CONFIG[this.ststus] || DEFAULT_STATUS;
+        return STATUS_CONFIG[this.status] || DEFAULT_STATUS;
     }
 
     get displayStatus(){
