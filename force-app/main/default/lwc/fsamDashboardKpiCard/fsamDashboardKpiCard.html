@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium slds-text-around_center">
+            <lightning-icon 
+              icon-name={iconName}
+              alternative-text={title} 
+              size="medium"
+            ></lightning-icon>
+
+            <div class="slds-m-top_small slds-text-title_caps">
+                {title}
+            </div>
+
+            <div class="kpi-value slds-m-top_small">
+                {value}
+            </div>
+        </div>
+    </lightning-card>
+</template>
