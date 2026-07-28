@@ -13,7 +13,7 @@ export default class FsamSearchBar extends LightningElement {
 
         this.debounceTimeout = window.setTimeout(() => {
             this.dispatchEvent(
-                new CustomEvent('Search', {
+                new CustomEvent('search', {
                     detail: {
                         value: this.value
                     }
@@ -22,7 +22,7 @@ export default class FsamSearchBar extends LightningElement {
         }, this.debounceDelay);
     }
 
-    disconnectCallback(){
+    disconnectedCallback(){
         window.clearTimeout(this.debounceTimeout);
     }
 }
