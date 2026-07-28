@@ -1,0 +1,7 @@
+:host {
+    display: block;
+}
+
+.empty-state__icon {
+    --slds-c-icon-color-foreground-default: var(--lwc-colorTextWeak);
+}
