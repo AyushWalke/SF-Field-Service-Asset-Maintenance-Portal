@@ -1,0 +1,15 @@
+:host {
+    display: block;
+}
+
+.error-panel__icon {
+    --slds-c-icon-color-foreground-default: var(--lwc-colorTextError);
+}
+
+.error-panel__details {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: monospace;
+    font-size: 0.8125rem;
+}
