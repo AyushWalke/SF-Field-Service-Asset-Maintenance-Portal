@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-grid slds-grid_align-center slds-grid_vertical-align-center slds-p-around_small">
+
+        <lightning-button
+            label="Previous"
+            icon-name="utility:chevronleft"
+            icon-position="left"
+            variant="neutral"
+            onclick={handlePrevious}
+            disabled={isFirstPage}>
+        </lightning-button>
+
+        <span class="pagination-info slds-m-horizontal_medium">
+            Page {currentPage} of {totalPages}
+        </span>
+
+        <lightning-button
+            label="Next"
+            icon-name="utility:chevronright"
+            icon-position="right"
+            variant="neutral"
+            onclick={handleNext}
+            disabled={isLastPage}>
+        </lightning-button>
+
+    </div>
+</template>

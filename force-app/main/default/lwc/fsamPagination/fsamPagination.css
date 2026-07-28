@@ -1,0 +1,9 @@
+:host {
+    display: block;
+}
+
+.pagination-info {
+    min-width: 8rem;
+    text-align: center;
+    font-weight: 600;
+}
