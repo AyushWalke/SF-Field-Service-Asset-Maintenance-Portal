@@ -18,6 +18,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_DashboardDTO</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_DashboardSummaryDTO</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_InventoryInvocable</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -39,6 +47,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_MaintenanceVisitTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_RecentRequestDTO</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -245,11 +257,19 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FSAM_Inventory_Update_Automation</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>FSAM_Maintenance_Visit_Completed</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>FSAM_Maintenance_Visit_Started</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FSAM_SLA_Validation</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
