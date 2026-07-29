@@ -1,5 +1,5 @@
 <template>
-    <lightning-card title="Recent Service Request">
+    <lightning-card title="Recent Service Requests">
         <template if:true={hasRequest}>
             <lightning-datatable
               key-field="id"
@@ -11,7 +11,7 @@
 
         <template if:false={hasRequest}>
             <c-fsam-empty-state
-                title="No Recent Service Request"
+                title="No Recent Service Requests"
                 message="There are no recent service requests to display."
             ></c-fsam-empty-state>
         </template>

@@ -22,6 +22,11 @@ const COLUMNS = [
         type: 'text'
     },
     {
+        label: 'Customer',
+        fieldName: 'customerName',
+        type: 'text'
+    },
+    {
         label: 'Created Date',
         fieldName: 'createdDate',
         type: 'date',
