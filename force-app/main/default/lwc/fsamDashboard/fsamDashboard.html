@@ -1,0 +1,106 @@
+<template>
+
+    <!-- Loading -->
+
+    <template if:true={isLoading}>
+        <c-fsam-spinner></c-fsam-spinner>
+    </template>
+
+    <!-- Error -->
+
+    <template if:false={isLoading}>
+
+        <template if:true={error}>
+            <c-fsam-error-panel message={error}></c-fsam-error-panel>
+        </template>
+
+        <!-- Dashboard -->
+
+        <template if:false={error}>
+
+            <!-- KPI Cards -->
+
+            <lightning-layout multiple-rows>
+
+                <lightning-layout-item
+                    size="12"
+                    medium-device-size="6"
+                    large-device-size="3"
+                    class="slds-p-around_x-small">
+
+                    <c-fsam-dashboard-kpi-card
+                        title="Open Requests"
+                        value={dashboard.summary.openRequests}
+                        icon-name="utility:work_order">
+                    </c-fsam-dashboard-kpi-card>
+
+                </lightning-layout-item>
+
+                <lightning-layout-item
+                    size="12"
+                    medium-device-size="6"
+                    large-device-size="3"
+                    class="slds-p-around_x-small">
+
+                    <c-fsam-dashboard-kpi-card
+                        title="Completed Today"
+                        value={dashboard.summary.completedToday}
+                        icon-name="utility:check">
+                    </c-fsam-dashboard-kpi-card>
+
+                </lightning-layout-item>
+
+                <lightning-layout-item
+                    size="12"
+                    medium-device-size="6"
+                    large-device-size="3"
+                    class="slds-p-around_x-small">
+
+                    <c-fsam-dashboard-kpi-card
+                        title="In Progress Requests"
+                        value={dashboard.summary.inProgressRequests}
+                        icon-name="utility:event">
+                    </c-fsam-dashboard-kpi-card>
+
+                </lightning-layout-item>
+
+                <lightning-layout-item
+                    size="12"
+                    medium-device-size="6"
+                    large-device-size="3"
+                    class="slds-p-around_x-small">
+
+                    <c-fsam-dashboard-kpi-card
+                        title="Assets Under Maintenance"
+                        value={dashboard.summary.assetsUnderMaintenance}
+                        icon-name="utility:warning">
+                    </c-fsam-dashboard-kpi-card>
+
+                </lightning-layout-item>
+
+            </lightning-layout>
+
+            <!-- Recent Requests -->
+
+            <div class="slds-m-top_large">
+
+                <c-fsam-dashboard-recent-requests
+                    requests={dashboard.recentRequests}>
+                </c-fsam-dashboard-recent-requests>
+
+            </div>
+
+            <!-- Quick Actions -->
+
+            <div class="slds-m-top_large">
+
+                <c-fsam-dashboard-quick-actions>
+                </c-fsam-dashboard-quick-actions>
+
+            </div>
+
+        </template>
+
+    </template>
+
+</template>
