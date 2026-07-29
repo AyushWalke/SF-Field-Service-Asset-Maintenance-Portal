@@ -1,0 +1,53 @@
+<template>
+    <lightning-card title="Quick Actions">
+        <div class="slds-p-around_medium">
+            <lightning-layout multiple-rows>
+                <lightning-layout-item
+                    size="12"
+                    medium-device-size="6"
+                    large-device-size="6"
+                    class="slds-p-around_x-small">
+
+                    <lightning-button
+                        label="New Service Request"
+                        icon-name="utility:add"
+                        variant="brand"
+                        onclick={handleNewServiceRequest}
+                        class="action-button">
+                    </lightning-button>
+
+                </lightning-layout-item>
+
+                <lightning-layout-item
+                    size="12"
+                    medium-device-size="6"
+                    large-device-size="6"
+                    class="slds-p-around_x-small">
+
+                    <lightning-button
+                        label="View Assets"
+                        icon-name="utility:asset_object"
+                        onclick={handleViewAssets}
+                        class="action-button">
+                    </lightning-button>
+
+                </lightning-layout-item>
+
+                <lightning-layout-item
+                    size="12"
+                    medium-device-size="6"
+                    large-device-size="6"
+                    class="slds-p-around_x-small">
+
+                    <lightning-button
+                        label="View Inventory"
+                        icon-name="utility:inventory"
+                        onclick={handleViewInventory}
+                        class="action-button">
+                    </lightning-button>
+
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+</template>
