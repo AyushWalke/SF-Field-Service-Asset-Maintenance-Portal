@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Recent Service Request">
+        <template if:true={hasRequest}>
+            <lightning-datatable
+              key-field="id"
+              data={requests}
+              columns={columns}
+              hide-checkbox-column
+            ></lightning-datatable>
+        </template>
+
+        <template if:false={hasRequest}>
+            <c-fsam-empty-state
+                title="No Recent Service Request"
+                message="There are no recent service requests to display."
+            ></c-fsam-empty-state>
+        </template>
+    </lightning-card>
+</template>
