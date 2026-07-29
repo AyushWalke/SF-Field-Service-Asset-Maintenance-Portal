@@ -18,6 +18,16 @@
 
         <template if:false={error}>
 
+            <div class="slds-m-bottom_large">
+                <h1 class="slds-text-heading_large">
+                    Field Service Dashboard
+                </h1>
+
+                <p class="slds-text-body_regular slds-text-color_weak">
+                    Operational overview of service requests and assets.
+                </p>
+            </div>
+
             <!-- KPI Cards -->
 
             <lightning-layout multiple-rows>
@@ -43,9 +53,9 @@
                     class="slds-p-around_x-small">
 
                     <c-fsam-dashboard-kpi-card
-                        title="Completed Today"
-                        value={dashboard.summary.completedToday}
-                        icon-name="utility:check">
+                        title="In Progress Requests"
+                        value={dashboard.summary.inProgressRequests}
+                        icon-name="utility:clock">
                     </c-fsam-dashboard-kpi-card>
 
                 </lightning-layout-item>
@@ -57,9 +67,9 @@
                     class="slds-p-around_x-small">
 
                     <c-fsam-dashboard-kpi-card
-                        title="In Progress Requests"
-                        value={dashboard.summary.inProgressRequests}
-                        icon-name="utility:event">
+                        title="Completed Today"
+                        value={dashboard.summary.completedToday}
+                        icon-name="utility:success">
                     </c-fsam-dashboard-kpi-card>
 
                 </lightning-layout-item>
@@ -73,7 +83,7 @@
                     <c-fsam-dashboard-kpi-card
                         title="Assets Under Maintenance"
                         value={dashboard.summary.assetsUnderMaintenance}
-                        icon-name="utility:warning">
+                        icon-name="utility:asset_object">
                     </c-fsam-dashboard-kpi-card>
 
                 </lightning-layout-item>
