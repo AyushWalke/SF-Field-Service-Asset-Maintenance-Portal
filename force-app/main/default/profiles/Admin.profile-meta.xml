@@ -356,6 +356,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>FSAM_Dashboard</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>FSAM_Engineer_Assignment__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
