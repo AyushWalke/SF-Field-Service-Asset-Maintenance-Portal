@@ -1,0 +1,106 @@
+<template>
+
+    <lightning-card
+        title="Asset Details"
+        icon-name="utility:asset_object">
+
+        <template if:true={asset}>
+
+            <div class="slds-p-around_medium">
+
+                <dl class="slds-list_horizontal slds-wrap">
+
+                    <dt class="slds-item_label slds-text-color_weak">
+                        Asset Name
+                    </dt>
+
+                    <dd class="slds-item_detail">
+                        {asset.assetName}
+                    </dd>
+
+                    <dt class="slds-item_label slds-text-color_weak">
+                        Serial Number
+                    </dt>
+
+                    <dd class="slds-item_detail">
+                        {asset.serialNumber}
+                    </dd>
+
+                    <dt class="slds-item_label slds-text-color_weak">
+                        Asset Type
+                    </dt>
+
+                    <dd class="slds-item_detail">
+                        {asset.assetType}
+                    </dd>
+
+                    <dt class="slds-item_label slds-text-color_weak">
+                        Customer
+                    </dt>
+
+                    <dd class="slds-item_detail">
+                        {asset.customerName}
+                    </dd>
+
+                    <dt class="slds-item_label slds-text-color_weak">
+                        Status
+                    </dt>
+
+                    <dd class="slds-item_detail">
+
+                        <c-fsam-status-badge
+                            status={asset.status}>
+                        </c-fsam-status-badge>
+
+                    </dd>
+
+                    <dt class="slds-item_label slds-text-color_weak">
+                        Warranty
+                    </dt>
+
+                    <dd class="slds-item_detail">
+                        {warrantyStatus}
+                    </dd>
+
+                    <dt class="slds-item_label slds-text-color_weak">
+                        Warranty Expiry
+                    </dt>
+
+                    <dd class="slds-item_detail">
+                        {asset.warrantyExpiry}
+                    </dd>
+
+                    <dt class="slds-item_label slds-text-color_weak">
+                        Installation Date
+                    </dt>
+
+                    <dd class="slds-item_detail">
+                        {asset.installationDate}
+                    </dd>
+
+                    <dt class="slds-item_label slds-text-color_weak">
+                        Location
+                    </dt>
+
+                    <dd class="slds-item_detail">
+                        {asset.location}
+                    </dd>
+
+                </dl>
+
+            </div>
+
+        </template>
+
+        <template if:false={asset}>
+
+            <c-fsam-empty-state
+                title="No Asset Selected"
+                message="Select an asset to view its details.">
+            </c-fsam-empty-state>
+
+        </template>
+
+    </lightning-card>
+
+</template>

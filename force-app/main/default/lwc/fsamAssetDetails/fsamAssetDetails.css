@@ -1,0 +1,13 @@
+:host {
+    display: block;
+}
+
+.slds-item_label {
+    width: 35%;
+    font-weight: 600;
+}
+
+.slds-item_detail {
+    width: 65%;
+    margin-bottom: 0.75rem;
+}
