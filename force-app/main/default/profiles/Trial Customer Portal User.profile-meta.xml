@@ -6,6 +6,26 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>FSAM_AssetDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_AssetExplorerController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_AssetExplorerDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_AssetMaintenanceHistoryDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_AssetSummaryDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_BusinessException</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -297,6 +317,10 @@
     <layoutAssignments>
         <layout>FSAM_Service_Request__c-FSAM Service Request Layout</layout>
     </layoutAssignments>
+    <tabVisibilities>
+        <tab>FSAM_Asset_Explorer</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>FSAM_Customer_Asset__c</tab>
         <visibility>DefaultOn</visibility>

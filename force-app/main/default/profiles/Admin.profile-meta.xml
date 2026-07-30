@@ -372,6 +372,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabVisibilities>
+        <tab>FSAM_Asset_Explorer</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>FSAM_Customer_Asset__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
