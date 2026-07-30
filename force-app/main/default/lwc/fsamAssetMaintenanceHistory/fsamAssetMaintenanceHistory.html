@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Maintenance History" icon-name="utility:maintenance_plan">
+        <template if:true={hasHistory}>
+            <lightning-datatable
+                key-field="id"
+                data={maintenanceHistory}
+                columns={columns}
+                hide-checkbox-column
+            ></lightning-datatable>
+        </template>
+
+        <template if:false={hasHistory}>
+            <c-fsam-empty-state
+                title="No Maintenance History"
+                message="No maintenance history available for the selected asset."
+            ></c-fsam-empty-state>
+        </template>
+    </lightning-card>
+</template>
