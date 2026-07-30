@@ -6,7 +6,7 @@ public with sharing class FSAM_AssetSummaryDTO {
     public Integer activeAssets{ get; set; }
     
     @AuraEnabled
-    public Integer inActiveAssets{ get; set; }
+    public Integer inactiveAssets{ get; set; }
     
     @AuraEnabled
     public Integer assetsUnderWarranty{ get; set; }
