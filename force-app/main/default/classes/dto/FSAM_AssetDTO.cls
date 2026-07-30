@@ -21,7 +21,7 @@ public with sharing class FSAM_AssetDTO {
     public Boolean warrantyActive { get; set; }
     
     @AuraEnabled
-    public Date warrantyExpire { get; set; }
+    public Date warrantyExpiry { get; set; }
     
     @AuraEnabled
     public Date installationDate { get; set; }
