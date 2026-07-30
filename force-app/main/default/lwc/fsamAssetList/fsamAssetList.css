@@ -1,0 +1,33 @@
+:host {
+    display: block;
+}
+
+.asset-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.asset-item {
+    padding: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #dddbda;
+    transition: background-color 0.2s ease;
+}
+
+.asset-item:hover {
+    background-color: #f3f3f3;
+}
+
+.asset-item_selected {
+    background-color: #eef4ff;
+    border-left: 4px solid var(--lwc-brandAccessible);
+}
+
+.asset-name {
+    font-weight: 600;
+}
+
+.asset-serial {
+    color: var(--lwc-colorTextWeak);
+    font-size: 0.875rem;
+}

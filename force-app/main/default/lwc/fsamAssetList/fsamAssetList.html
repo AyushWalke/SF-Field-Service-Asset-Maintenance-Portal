@@ -1,0 +1,61 @@
+<template>
+    <lightning-card title="Assets" icon-name="utility:asset_object">
+
+        <template if:true={hasAssets}>
+
+            <div class="asset-list">
+
+                <template for:each={assetViewModels} for:item="asset">
+
+                    <div
+                        key={asset.id}
+                        class={asset.cssClass}
+                        data-id={asset.id}
+                        onclick={handleAssetSelection}>
+
+                        <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+
+                            <div>
+                                <div class="asset-name">
+                                    {asset.assetName}
+                                </div>
+
+                                <div class="asset-serial">
+                                    {asset.serialNumber}
+                                </div>
+                            </div>
+
+                            <c-fsam-status-badge
+                                status={asset.status}>
+                            </c-fsam-status-badge>
+
+                        </div>
+
+                    </div>
+
+                </template>
+
+            </div>
+
+            <div class="slds-p-around_medium">
+
+                <c-fsam-pagination
+                    current-page="1"
+                    total-pages="1">
+                </c-fsam-pagination>
+
+            </div>
+
+        </template>
+
+        <template if:false={hasAssets}>
+
+            <c-fsam-empty-state
+                title="No Assets Found"
+                message="No customer assets are available.">
+            </c-fsam-empty-state>
+
+        </template>
+
+    </lightning-card>
+</template>
