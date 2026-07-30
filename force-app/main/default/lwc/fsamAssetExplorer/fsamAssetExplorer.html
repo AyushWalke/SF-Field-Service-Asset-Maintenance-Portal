@@ -1,0 +1,101 @@
+<template>
+
+    <lightning-card
+        title="Asset Explorer"
+        icon-name="utility:asset_object">
+
+        <div class="slds-p-around_medium">
+
+            <!-- Search -->
+
+            <c-fsam-asset-search
+                onsearch={handleSearch}>
+            </c-fsam-asset-search>
+
+            <!-- Summary -->
+
+            <div class="summary-container slds-m-top_medium">
+
+                <lightning-layout multiple-rows>
+
+                    <lightning-layout-item size="3">
+
+                        <c-fsam-dashboard-kpi-card
+                            title="Total Assets"
+                            value={summary.totalAssets}
+                            icon-name="utility:asset_object">
+                        </c-fsam-dashboard-kpi-card>
+
+                    </lightning-layout-item>
+
+                    <lightning-layout-item size="3">
+
+                        <c-fsam-dashboard-kpi-card
+                            title="Active"
+                            value={summary.activeAssets}
+                            icon-name="utility:success">
+                        </c-fsam-dashboard-kpi-card>
+
+                    </lightning-layout-item>
+
+                    <lightning-layout-item size="3">
+
+                        <c-fsam-dashboard-kpi-card
+                            title="Inactive"
+                            value={summary.inactiveAssets}
+                            icon-name="utility:close">
+                        </c-fsam-dashboard-kpi-card>
+
+                    </lightning-layout-item>
+
+                    <lightning-layout-item size="3">
+
+                        <c-fsam-dashboard-kpi-card
+                            title="Under Warranty"
+                            value={summary.assetsUnderWarranty}
+                            icon-name="utility:approval">
+                        </c-fsam-dashboard-kpi-card>
+
+                    </lightning-layout-item>
+
+                </lightning-layout>
+
+            </div>
+
+            <!-- Main Layout -->
+
+            <div class="slds-grid slds-gutters slds-m-top_large">
+
+                <div class="slds-col slds-size_1-of-3">
+
+                    <c-fsam-asset-list
+                        assets={filteredAssets}
+                        selected-asset-id={selectedAssetId}
+                        onassetselect={handleAssetSelection}>
+                    </c-fsam-asset-list>
+
+                </div>
+
+                <div class="slds-col slds-size_2-of-3">
+
+                    <c-fsam-asset-details
+                        asset={selectedAsset}>
+                    </c-fsam-asset-details>
+
+                    <div class="slds-m-top_medium">
+
+                        <c-fsam-asset-maintenance-history
+                            maintenance-history={maintenanceHistory}>
+                        </c-fsam-asset-maintenance-history>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+
+</template>

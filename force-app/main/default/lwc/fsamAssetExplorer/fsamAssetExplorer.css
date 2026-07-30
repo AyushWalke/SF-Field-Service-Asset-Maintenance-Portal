@@ -1,0 +1,11 @@
+:host {
+    display: block;
+}
+
+.summary-container {
+    margin-top: 1rem;
+}
+
+lightning-layout-item {
+    padding: 0.5rem;
+}
