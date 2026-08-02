@@ -1,0 +1,42 @@
+:host {
+    display: block;
+}
+
+.activity-container {
+    padding: 1rem;
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #dddbda;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-icon {
+    flex-shrink: 0;
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-title {
+    font-weight: 600;
+}
+
+.activity-description {
+    margin-top: .25rem;
+    color: var(--lwc-colorTextWeak);
+}
+
+.activity-date {
+    margin-top: .5rem;
+    font-size: .75rem;
+    color: var(--lwc-colorTextWeak);
+}

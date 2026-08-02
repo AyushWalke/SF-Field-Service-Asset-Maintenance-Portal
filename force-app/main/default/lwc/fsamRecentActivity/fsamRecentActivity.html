@@ -1,0 +1,76 @@
+<template>
+
+    <lightning-card
+        title="Recent Activity"
+        icon-name="utility:activity">
+
+        <template if:true={hasActivities}>
+
+            <div class="activity-container">
+
+                <template
+                    for:each={activityItems}
+                    for:item="activity">
+
+                    <div
+                        key={activity.id}
+                        class="activity-item">
+
+                        <div class="activity-icon">
+
+                            <lightning-icon
+                                icon-name={activity.iconName}
+                                size="x-small">
+                            </lightning-icon>
+
+                        </div>
+
+                        <div class="activity-content">
+
+                            <div class="activity-title">
+
+                                {activity.title}
+
+                            </div>
+
+                            <div class="activity-description">
+
+                                {activity.description}
+
+                            </div>
+
+                            <div class="activity-date">
+
+                                <lightning-formatted-date-time
+                                    value={activity.activityDate}
+                                    year="numeric"
+                                    month="short"
+                                    day="2-digit"
+                                    hour="2-digit"
+                                    minute="2-digit">
+                                </lightning-formatted-date-time>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </template>
+
+            </div>
+
+        </template>
+
+        <template if:false={hasActivities}>
+
+            <c-fsam-empty-state
+                title="No Recent Activity"
+                message="There is no recent activity to display.">
+            </c-fsam-empty-state>
+
+        </template>
+
+    </lightning-card>
+
+</template>
