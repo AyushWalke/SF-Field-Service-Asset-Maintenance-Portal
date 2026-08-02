@@ -1,0 +1,29 @@
+<template>
+
+    <lightning-card
+        title="Open Requests"
+        icon-name="utility:work_order">
+
+        <template if:true={hasRequests}>
+
+            <lightning-datatable
+                key-field="id"
+                data={requests}
+                columns={columns}
+                hide-checkbox-column>
+            </lightning-datatable>
+
+        </template>
+
+        <template if:false={hasRequests}>
+
+            <c-fsam-empty-state
+                title="No Open Requests"
+                message="There are no open service requests assigned.">
+            </c-fsam-empty-state>
+
+        </template>
+
+    </lightning-card>
+
+</template>
