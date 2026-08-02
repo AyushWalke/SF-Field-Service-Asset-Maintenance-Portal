@@ -1,0 +1,14 @@
+:host {
+    display: block;
+}
+
+.label {
+    width: 35%;
+    font-weight: 600;
+    color: var(--lwc-colorTextWeak);
+}
+
+.value {
+    width: 65%;
+    margin-bottom: 0.75rem;
+}

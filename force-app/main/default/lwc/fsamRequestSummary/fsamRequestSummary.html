@@ -1,0 +1,64 @@
+<template>
+
+    <lightning-card
+        title="Request Summary"
+        icon-name="utility:work_order">
+
+        <template if:true={request}>
+
+            <div class="slds-p-around_medium">
+
+                <dl class="slds-list_horizontal slds-wrap">
+
+                    <dt class="label">Request Number</dt>
+                    <dd class="value">{request.requestNumber}</dd>
+
+                    <dt class="label">Subject</dt>
+                    <dd class="value">{request.subject}</dd>
+
+                    <dt class="label">Customer</dt>
+                    <dd class="value">{request.customerName}</dd>
+
+                    <dt class="label">Asset</dt>
+                    <dd class="value">{request.assetName}</dd>
+
+                    <dt class="label">Engineer</dt>
+                    <dd class="value">{request.assignedEngineer}</dd>
+
+                    <dt class="label">Priority</dt>
+                    <dd class="value">{request.priority}</dd>
+
+                    <dt class="label">Status</dt>
+
+                    <dd class="value">
+
+                        <c-fsam-status-badge
+                            status={request.status}>
+                        </c-fsam-status-badge>
+
+                    </dd>
+
+                    <dt class="label">Open Date</dt>
+                    <dd class="value">{request.openDate}</dd>
+
+                    <dt class="label">SLA Due</dt>
+                    <dd class="value">{request.slaDueDate}</dd>
+
+                </dl>
+
+            </div>
+
+        </template>
+
+        <template if:false={request}>
+
+            <c-fsam-empty-state
+                title="No Service Request"
+                message="No service request information is available.">
+            </c-fsam-empty-state>
+
+        </template>
+
+    </lightning-card>
+
+</template>
