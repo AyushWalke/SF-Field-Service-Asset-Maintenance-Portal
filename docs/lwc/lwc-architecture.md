@@ -157,6 +157,7 @@ Components
 - assignmentSummary
 - todaySchedule
 - openRequests
+- recentActivity
 
 ---
 
