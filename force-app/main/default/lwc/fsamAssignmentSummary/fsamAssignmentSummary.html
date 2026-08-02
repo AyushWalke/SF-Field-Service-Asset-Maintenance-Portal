@@ -1,0 +1,47 @@
+<template>
+
+    <lightning-layout multiple-rows>
+
+        <lightning-layout-item size="3">
+
+            <c-fsam-dashboard-kpi-card
+                title="Today's Assignments"
+                value={summary.todaysAssignments}
+                icon-name="utility:task">
+            </c-fsam-dashboard-kpi-card>
+
+        </lightning-layout-item>
+
+        <lightning-layout-item size="3">
+
+            <c-fsam-dashboard-kpi-card
+                title="In Progress"
+                value={summary.inProgressAssignments}
+                icon-name="utility:work_order">
+            </c-fsam-dashboard-kpi-card>
+
+        </lightning-layout-item>
+
+        <lightning-layout-item size="3">
+
+            <c-fsam-dashboard-kpi-card
+                title="Completed Today"
+                value={summary.completedToday}
+                icon-name="utility:success">
+            </c-fsam-dashboard-kpi-card>
+
+        </lightning-layout-item>
+
+        <lightning-layout-item size="3">
+
+            <c-fsam-dashboard-kpi-card
+                title="Overdue"
+                value={summary.overdueAssignments}
+                icon-name="utility:warning">
+            </c-fsam-dashboard-kpi-card>
+
+        </lightning-layout-item>
+
+    </lightning-layout>
+
+</template>
