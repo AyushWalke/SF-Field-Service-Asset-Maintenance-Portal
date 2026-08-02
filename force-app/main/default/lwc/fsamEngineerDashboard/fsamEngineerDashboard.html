@@ -1,0 +1,45 @@
+<template>
+
+    <lightning-card
+        title="Engineer Dashboard"
+        icon-name="utility:user">
+
+        <div class="slds-p-around_medium">
+
+            <c-fsam-assignment-summary
+                summary={assignmentSummary}>
+            </c-fsam-assignment-summary>
+
+            <div class="slds-grid slds-gutters slds-m-top_large">
+
+                <div class="slds-col slds-size_1-of-2">
+
+                    <c-fsam-today-schedule
+                        schedule={todaySchedule}>
+                    </c-fsam-today-schedule>
+
+                </div>
+
+                <div class="slds-col slds-size_1-of-2">
+
+                    <c-fsam-open-requests
+                        requests={openRequests}>
+                    </c-fsam-open-requests>
+
+                </div>
+
+            </div>
+
+            <div class="slds-m-top_large">
+
+                <c-fsam-recent-activity
+                    activities={recentActivities}>
+                </c-fsam-recent-activity>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+
+</template>
