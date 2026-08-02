@@ -1,14 +1,14 @@
 <template>
     <lightning-card title="Service Request Workspace" icon-name="utility:work_order">
         <div class="slds-p-around_medium">
-            <c-fsam-request-summary request={getRequestSummary}></c-fsam-request-summary>
+            <c-fsam-request-summary request={requestSummary}></c-fsam-request-summary>
 
             <div class="slds-grid slds-gutters slds-m-top_large">
                 <div class="slds-col slds-size_2-of-3">
-                    <c-fsam-request-timeline timeline={getTimeline}></c-fsam-request-timeline>
+                    <c-fsam-request-timeline timeline={timeline}></c-fsam-request-timeline>
                 </div>
                 <div class="slds-col slds-size_1-of-3">
-                    <c-fsam-parts-usage parts={getPartsUsage}></c-fsam-parts-usage>
+                    <c-fsam-parts-usage parts={partsUsage}></c-fsam-parts-usage>
                 </div>
             </div>
         </div>

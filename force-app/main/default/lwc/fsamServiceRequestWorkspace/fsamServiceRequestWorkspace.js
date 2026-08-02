@@ -2,26 +2,26 @@ import { LightningElement, wire } from 'lwc';
 import getServiceRequest from '@salesforce/apex/FSAM_ServiceRequestController.getServiceRequest';
 
 export default class FsamServiceRequestWorkspace extends LightningElement {
-    workSpace;
+    workspace;
 
     @wire(getServiceRequest)
     wiredWorkSpace({error, data}){
         if(data){
-            this.workSpace = data;
+            this.workspace = data;
         } else {
             console.error(error);
         }
     }
 
-    get getRequestSummary(){
-        return this.workSpace?.requestSummary;
+    get requestSummary(){
+        return this.workspace?.requestSummary;
     }
 
-    get getTimeline(){
-        return this.workSpace?.timeline || [];
+    get timeline(){
+        return this.workspace?.timeline || [];
     }
 
-    get getPartsUsage(){
-        return this.workSpace?.partsUsage || [];
+    get partsUsage(){
+        return this.workspace?.partsUsage || [];
     }
 }
