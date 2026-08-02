@@ -1,0 +1,75 @@
+<template>
+
+    <lightning-card
+        title="Request Timeline"
+        icon-name="utility:timeline">
+
+        <template if:true={hasTimeline}>
+
+            <div class="timeline">
+
+                <template for:each={timelineItems} for:item="item">
+
+                    <div
+                        key={item.id}
+                        class="timeline-item">
+
+                        <div class="timeline-icon">
+
+                            <lightning-icon
+                                icon-name={item.iconName}
+                                size="x-small">
+                            </lightning-icon>
+
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-title">
+
+                                {item.title}
+
+                            </div>
+
+                            <div class="timeline-description">
+
+                                {item.description}
+
+                            </div>
+
+                            <div class="timeline-date">
+
+                                {item.activityDate}
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-status">
+
+                            <c-fsam-status-badge
+                                status={item.status}>
+                            </c-fsam-status-badge>
+
+                        </div>
+
+                    </div>
+
+                </template>
+
+            </div>
+
+        </template>
+
+        <template if:false={hasTimeline}>
+
+            <c-fsam-empty-state
+                title="No Timeline"
+                message="No timeline events are available.">
+            </c-fsam-empty-state>
+
+        </template>
+
+    </lightning-card>
+
+</template>

@@ -1,0 +1,66 @@
+:host {
+    display: block;
+}
+
+.timeline {
+    padding: 1rem;
+}
+
+.timeline-item {
+
+    display: flex;
+    align-items: flex-start;
+
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    border-bottom: 1px solid #dddbda;
+
+}
+
+.timeline-item:last-child {
+
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.timeline-icon {
+
+    margin-right: 1rem;
+
+}
+
+.timeline-content {
+
+    flex: 1;
+
+}
+
+.timeline-title {
+
+    font-weight: 600;
+
+}
+
+.timeline-description {
+
+    color: var(--lwc-colorTextWeak);
+    margin-top: 0.25rem;
+
+}
+
+.timeline-date {
+
+    font-size: 0.75rem;
+    color: var(--lwc-colorTextWeak);
+    margin-top: 0.5rem;
+
+}
+
+.timeline-status {
+
+    margin-left: 1rem;
+
+}
