@@ -28,6 +28,7 @@ public with sharing class FSAM_ServiceRequestController {
 
         workspace.timeline.add(
             createTimeline(
+                'REQUEST',
                 'Request Created',
                 'Service request was created.',
                 'Open',
@@ -37,6 +38,7 @@ public with sharing class FSAM_ServiceRequestController {
 
         workspace.timeline.add(
             createTimeline(
+                'ASSIGNMENT',
                 'Engineer Assigned',
                 'John Smith assigned.',
                 'Assigned',
@@ -46,6 +48,7 @@ public with sharing class FSAM_ServiceRequestController {
 
         workspace.timeline.add(
             createTimeline(
+                'VISIT',
                 'Maintenance Started',
                 'Engineer started inspection.',
                 'In Progress',
@@ -85,6 +88,7 @@ public with sharing class FSAM_ServiceRequestController {
     }
 
     private static FSAM_RequestTimelineDTO createTimeline(
+        String activityType,
         String title,
         String description,
         String status,
@@ -94,6 +98,7 @@ public with sharing class FSAM_ServiceRequestController {
         FSAM_RequestTimelineDTO timeline =
             new FSAM_RequestTimelineDTO();
 
+        timeline.activityType = activityType;
         timeline.title = title;
         timeline.description = description;
         timeline.status = status;
