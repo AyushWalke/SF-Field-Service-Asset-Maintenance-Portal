@@ -198,7 +198,7 @@ Current Status
 | FSAM_ServiceRequestController | ✅ Implemented |
 | FSAM_DashboardController | ✅ Implemented |
 | FSAM_AssetExplorerController | ✅ Implemented |
-| FSAM_EngineerDashboardController | ⏳ Planned |
+| FSAM_EngineerDashboardController | ✅ Implemented |
 | FSAM_InventoryController | ⏳ Planned |
 
 Controllers will be introduced only when their corresponding feature module is implemented.
@@ -312,6 +312,8 @@ Service Request Workspace
 Phase 5
 
 Engineer Dashboard
+
+**Status:** ✅ Completed
 
 ---
 
