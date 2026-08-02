@@ -416,6 +416,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>FSAM_Service_Request_Workspace</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>FSAM_Service_Request__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>

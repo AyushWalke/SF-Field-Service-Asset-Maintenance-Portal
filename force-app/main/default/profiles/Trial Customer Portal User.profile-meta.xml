@@ -74,7 +74,19 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_PartUsageDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_RecentRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_RequestSummaryDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_RequestTimelineDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -99,6 +111,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_ServiceRequestTriggerHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ServiceRequestWorkspaceDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -343,6 +359,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>FSAM_Service_Part__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSAM_Service_Request_Workspace</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
