@@ -1,0 +1,66 @@
+<template>
+
+    <lightning-card
+        title="Today's Schedule"
+        icon-name="utility:event">
+
+        <template if:true={hasSchedule}>
+
+            <div class="schedule-container">
+
+                <template
+                    for:each={schedule}
+                    for:item="item">
+
+                    <div
+                        key={item.id}
+                        class="schedule-row">
+
+                        <div class="time">
+
+                            <lightning-formatted-time
+                                value={item.scheduledTime}>
+                            </lightning-formatted-time>
+
+                        </div>
+
+                        <div class="location">
+
+                            {item.location}
+
+                        </div>
+
+                        <div class="request">
+
+                            {item.serviceRequestNumber}
+
+                        </div>
+
+                        <div class="status">
+
+                            <c-fsam-status-badge
+                                status={item.status}>
+                            </c-fsam-status-badge>
+
+                        </div>
+
+                    </div>
+
+                </template>
+
+            </div>
+
+        </template>
+
+        <template if:false={hasSchedule}>
+
+            <c-fsam-empty-state
+                title="No Schedule"
+                message="There are no assignments scheduled for today.">
+            </c-fsam-empty-state>
+
+        </template>
+
+    </lightning-card>
+
+</template>

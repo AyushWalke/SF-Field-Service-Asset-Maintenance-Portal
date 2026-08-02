@@ -1,0 +1,37 @@
+:host {
+    display: block;
+}
+
+.schedule-container {
+    padding: 1rem;
+}
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 110px auto;
+    align-items: center;
+    gap: 1rem;
+    padding: .75rem 0;
+    border-bottom: 1px solid #dddbda;
+}
+
+.schedule-row:last-child {
+    border-bottom: none;
+}
+
+.time {
+    font-weight: 600;
+}
+
+.location {
+    color: var(--lwc-colorTextDefault);
+}
+
+.request {
+    font-weight: 600;
+    color: #0176d3;
+}
+
+.status {
+    justify-self: end;
+}
