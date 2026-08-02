@@ -1,0 +1,29 @@
+<template>
+
+    <lightning-card
+        title="Parts Used"
+        icon-name="utility:asset_object">
+
+        <template if:true={hasParts}>
+
+            <lightning-datatable
+                key-field="id"
+                data={parts}
+                columns={columns}
+                hide-checkbox-column>
+            </lightning-datatable>
+
+        </template>
+
+        <template if:false={hasParts}>
+
+            <c-fsam-empty-state
+                title="No Parts Used"
+                message="No replacement parts have been used for this service request.">
+            </c-fsam-empty-state>
+
+        </template>
+
+    </lightning-card>
+
+</template>
