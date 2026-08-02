@@ -26,6 +26,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_AssignmentSummaryDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_BusinessException</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -47,6 +51,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_DashboardSummaryDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_EngineerDashboardController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_EngineerDashboardDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -74,7 +86,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_OpenRequestDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_PartUsageDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_RecentActivityDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -119,6 +139,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_TestDataFactory</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_TodayScheduleDTO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -347,6 +371,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>FSAM_Engineer_Assignment__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>FSAM_Engineer_Dashboard</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

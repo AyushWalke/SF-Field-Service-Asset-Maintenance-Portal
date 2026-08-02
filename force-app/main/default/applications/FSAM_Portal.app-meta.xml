@@ -125,6 +125,7 @@
     <tabs>FSAM_Dashboard</tabs>
     <tabs>FSAM_Asset_Explorer</tabs>
     <tabs>FSAM_Service_Request_Workspace</tabs>
+    <tabs>FSAM_Engineer_Dashboard</tabs>
     <tabs>standard-Account</tabs>
     <tabs>FSAM_Customer_Asset__c</tabs>
     <tabs>FSAM_Service_Request__c</tabs>
