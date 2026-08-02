@@ -31,7 +31,7 @@ public with sharing class FSAM_ServiceRequestController {
                 'REQUEST',
                 'Request Created',
                 'Service request was created.',
-                'Open',
+                'New',
                 Datetime.newInstance(2026, 7, 30, 9, 0, 0)
             )
         );
