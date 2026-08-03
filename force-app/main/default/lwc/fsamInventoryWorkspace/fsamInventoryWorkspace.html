@@ -1,0 +1,79 @@
+<template>
+
+    <lightning-card
+        title="Inventory Workspace"
+        icon-name="utility:inventory">
+
+        <div class="slds-p-around_medium">
+
+            <!-- Search -->
+
+            <c-fsam-inventory-search
+                onsearch={handleSearch}>
+            </c-fsam-inventory-search>
+
+            <!-- Summary -->
+
+            <div class="slds-m-top_medium">
+
+                <lightning-layout multiple-rows>
+
+                    <lightning-layout-item size="3">
+
+                        <c-fsam-dashboard-kpi-card
+                            title="Total Parts"
+                            value={summary.totalParts}
+                            icon-name="utility:product_service_campaign">
+                        </c-fsam-dashboard-kpi-card>
+
+                    </lightning-layout-item>
+
+                    <lightning-layout-item size="3">
+
+                        <c-fsam-dashboard-kpi-card
+                            title="Low Stock"
+                            value={summary.lowStockParts}
+                            icon-name="utility:warning">
+                        </c-fsam-dashboard-kpi-card>
+
+                    </lightning-layout-item>
+
+                    <lightning-layout-item size="3">
+
+                        <c-fsam-dashboard-kpi-card
+                            title="Out of Stock"
+                            value={summary.outOfStockParts}
+                            icon-name="utility:error">
+                        </c-fsam-dashboard-kpi-card>
+
+                    </lightning-layout-item>
+
+                    <lightning-layout-item size="3">
+
+                        <c-fsam-dashboard-kpi-card
+                            title="Inventory Value"
+                            value={summary.totalInventoryValue}
+                            icon-name="utility:moneybag">
+                        </c-fsam-dashboard-kpi-card>
+
+                    </lightning-layout-item>
+
+                </lightning-layout>
+
+            </div>
+
+            <!-- Table -->
+
+            <div class="slds-m-top_large">
+
+                <c-fsam-inventory-table
+                    items={filteredItems}>
+                </c-fsam-inventory-table>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+
+</template>

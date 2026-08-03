@@ -1,0 +1,7 @@
+:host {
+    display: block;
+}
+
+lightning-layout-item {
+    padding: .5rem;
+}
