@@ -222,6 +222,8 @@ Documentation
 -   Shared component standards
 -   Loading, empty and error state design
 
+**Status:** ✅ Completed
+
 ---
 
 ## Sprint 6 — Lightning Web Components (5 Hours)
@@ -278,6 +280,8 @@ Documentation
 -   Loading Spinner
 -   Empty State
 -   Error State
+
+**Status:** ✅ Completed
 
 ---
 
