@@ -1,0 +1,29 @@
+<template>
+
+    <lightning-card
+        title="Inventory"
+        icon-name="utility:inventory">
+
+        <template if:true={hasItems}>
+
+            <lightning-datatable
+                key-field="id"
+                data={items}
+                columns={columns}
+                hide-checkbox-column>
+            </lightning-datatable>
+
+        </template>
+
+        <template if:false={hasItems}>
+
+            <c-fsam-empty-state
+                title="No Inventory Found"
+                message="No inventory items match the current search criteria.">
+            </c-fsam-empty-state>
+
+        </template>
+
+    </lightning-card>
+
+</template>
