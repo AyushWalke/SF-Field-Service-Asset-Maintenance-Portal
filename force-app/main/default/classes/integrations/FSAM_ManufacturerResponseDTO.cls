@@ -6,7 +6,7 @@ public with sharing class FSAM_ManufacturerResponseDTO {
     public String country{ get; set;}
     
     @AuraEnabled
-    public String warrantyMonths{ get; set;}
+    public Integer warrantyMonths{ get; set;}
     
     @AuraEnabled
     public String supportEmail{ get; set;}
