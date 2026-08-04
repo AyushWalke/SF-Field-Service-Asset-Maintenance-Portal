@@ -18,7 +18,7 @@ public with sharing class FSAM_ManufacturerIntegrationService {
             response = http.send(request);
         } catch (Exception ex) {
             throw new FSAM_IntegrationException(
-                'Unable to connect to manufacturer service.'
+                'Unable to connect to manufacturer service.' + ex.getMessage()
             );
         }
 
@@ -37,7 +37,7 @@ public with sharing class FSAM_ManufacturerIntegrationService {
                 );
         } catch (Exception ex) {
             throw new FSAM_IntegrationException(
-                'Unable to parse manufacturer response.'
+                'Unable to parse manufacturer response.' + ex.getMessage()
             );
         }
     }
