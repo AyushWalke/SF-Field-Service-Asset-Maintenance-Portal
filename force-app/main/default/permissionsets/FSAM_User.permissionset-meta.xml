@@ -4,6 +4,10 @@
         <application>FSAM_Portal</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <externalCredentialPrincipalAccesses>
+        <enabled>true</enabled>
+        <externalCredentialPrincipal>FSAM_Manufacturer_External_Credential-FSAM Manufacturer External Credential Principal</externalCredentialPrincipal>
+    </externalCredentialPrincipalAccesses>
     <fieldPermissions>
         <editable>true</editable>
         <field>FSAM_Customer_Asset__c.FSAM_City__c</field>
