@@ -62,6 +62,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_IntegrationException</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_InventoryController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -103,6 +107,30 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_MaintenanceVisitTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ManufacturerCalloutMock</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ManufacturerErrorCalloutMock</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ManufacturerIntegrationService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ManufacturerIntegrationServiceTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ManufacturerInvalidJsonCalloutMock</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ManufacturerResponseDTO</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
