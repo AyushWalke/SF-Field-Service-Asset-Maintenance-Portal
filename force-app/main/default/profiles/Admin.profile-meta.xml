@@ -14,6 +14,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_AssetExplorerControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_AssetExplorerDTO</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -46,6 +50,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_DashboardControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_DashboardDTO</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -58,6 +66,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_EngineerDashboardControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_EngineerDashboardDTO</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -67,6 +79,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_InventoryController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_InventoryControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -167,6 +183,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_ServiceRequestController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ServiceRequestControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
