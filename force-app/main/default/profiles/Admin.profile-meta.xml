@@ -102,6 +102,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_InventoryServiceTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_InventorySummaryDTO</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -119,6 +123,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_MaintenanceVisitService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_MaintenanceVisitServiceTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -195,6 +203,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_ServiceRequestService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ServiceRequestServiceTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
