@@ -22,11 +22,11 @@ The project is intentionally scoped as a **portfolio-quality Salesforce Develope
 | Sprint 3 – Platform Configuration & Security | 2 Hours | ✅ Completed |
 | Sprint 4 – Enterprise Apex | 5 Hours | ✅ Completed |
 | Sprint 5 – Business Logic (Flows & Triggers) | 3 Hours | ✅ Completed |
-| Sprint 5.5 – UI/UX Architecture (Planning) | Included in Sprint 6 | ⏳ Next |
-| Sprint 6 – Lightning Web Components | 5 Hours | ⏳ Next |
-| Sprint 7 – Integrations | 2 Hours | Pending |
-| Sprint 8 – Testing | 2 Hours | Pending |
-| Sprint 9 – Deployment & Documentation | 1 Hour | Pending |
+| Sprint 5.5 – UI/UX Architecture (Planning) | Included in Sprint 6 | ✅ Completed |
+| Sprint 6 – Lightning Web Components | 5 Hours | ✅ Completed |
+| Sprint 7 – Integrations | 2 Hours | ✅ Completed |
+| Sprint 8 – Testing | 2 Hours | ✅ Completed |
+| Sprint 9 – Deployment & Documentation | 1 Hour | ⏳ In Progress |
 
 **Estimated Total Project Duration:** **26 Hours**
 
@@ -296,6 +296,8 @@ Documentation
 - Error Handling
 - HttpCalloutMock
 
+**Status:** ✅ Completed
+
 ---
 
 ## Sprint 8 — Testing (2 Hours)
@@ -308,6 +310,8 @@ Documentation
 - Flow Tests
 - Integration Tests
 - 90%+ Code Coverage
+
+**Status:** ✅ Completed
 
 ---
 
