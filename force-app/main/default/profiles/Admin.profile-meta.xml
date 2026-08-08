@@ -142,6 +142,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_MaintenanceVisitTriggerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_ManufacturerCalloutMock</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -227,6 +231,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_ServiceRequestTriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ServiceRequestTriggerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
