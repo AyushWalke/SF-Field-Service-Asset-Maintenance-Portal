@@ -19,6 +19,7 @@ public with sharing class FSAM_TestDataFactory {
     public static FSAM_Customer_Asset__c createCustomerAsset(Id accountId){
         FSAM_Customer_Asset__c asset = new FSAM_Customer_Asset__c(
             FSAM_Asset_Name__c = 'Test Asset',
+            FSAM_Serial_Number__c = 'SN-TEST-' + String.valueOf(Datetime.now().getTime()),
             FSAM_Asset_Type__c = 'Power Systems',
             FSAM_Account__c = accountId,
             FSAM_Installation_Date__c = Date.today(),
