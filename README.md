@@ -1,5 +1,10 @@
 # Field Service Asset Maintenance Portal (FSAM)
 
+![Salesforce](https://img.shields.io/badge/Salesforce-DX-blue)
+![Apex](https://img.shields.io/badge/Apex-Enterprise-orange)
+![LWC](https://img.shields.io/badge/Lightning-Web%20Components-blueviolet)
+![Coverage](https://img.shields.io/badge/Code%20Coverage-87%25-brightgreen)
+
 An enterprise-style Salesforce application built using **Salesforce DX**, **Apex Enterprise Patterns**, **Lightning Web Components**, **Record-Triggered Flows**, and **REST Integrations**.
 
 This project demonstrates how a real-world Salesforce application can be designed using a layered architecture while following Salesforce development best practices. It was built as a portfolio project to showcase enterprise-level Salesforce Developer skills.
@@ -100,6 +105,16 @@ Lightning Web Components
 - Security-first development
 
 ---
+
+## Repository Highlights
+
+- Enterprise Apex Architecture
+- Layered Service Pattern
+- Reusable Lightning Web Components
+- REST Integration using Named Credentials
+- Apex Unit Tests
+- Salesforce DX Project Structure
+- Portfolio-quality Documentation
 
 # Technology Stack
 
