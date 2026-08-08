@@ -46,6 +46,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_CustomerAssetSelectorTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_DashboardController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -122,6 +126,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_MaintenanceVisitSelectorTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_MaintenanceVisitService</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -190,6 +198,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSAM_ServicePartSelectorTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSAM_ServiceRequestController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -199,6 +211,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSAM_ServiceRequestSelector</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSAM_ServiceRequestSelectorTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
